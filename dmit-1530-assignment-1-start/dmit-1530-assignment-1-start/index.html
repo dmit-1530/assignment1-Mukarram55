@@ -10,9 +10,149 @@
 
     <title>Home Page</title>
 
+    <!-- Google Fonts -->
+
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="container header__bar">
+            <a href="index.html" class="logo"><img src="img/klinika-Logo.png" alt="Klinika logo" class="logo-img"></a>
+            <ul class="header__links">
+                <li class="nav-item nav-contact"><a href="#contact">Contact</a></li>
+                <li class="nav-item nav-home"><a href="#home">Home</a></li>
+                <li class="nav-item nav-about"><a href="about.html">About</a></li>
+                <li class="nav-item nav-doctors"><a href="#doctors">Our Doctors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+        <div class="hero-text">
+            <h1>Good Health Is The Root Of All Happiness</h1>
+            <ul class="stats">
+            <li><strong>123</strong> Expert Doctors</li>
+            <li><strong>1234</strong> Medical Staff</li>
+            <li><strong>12345</strong> Total Patients</li>
+            </ul>
+        </div>
+        <img src="img/carousel-1-1.png" alt="Doctors team" class="hero-img">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+    <div class="container about-grid">
+      <img src="img/doctors-smiling.png" alt="Clinic" class="about-img">
+      <div class="about-text">
+        <h2>Why You Should Trust Us? Get Know About Us!</h2>
+        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et  sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+        <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita  clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+        <ul class="checklist">
+          <li>Quality health care</li>
+          <li>Only Qualified Doctors</li>
+          <li>Medical Research Professionals</li>
+        </ul>
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-text">
+      <h2>Why Choose Us</h2>
+      <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+
+      <ul class="why-features">
+        <li><img src="img/experince-Icon.png" alt="" class="feat-icon"><div>Experience<br><em><strong>Doctors</strong></em></div></li>
+        <li><img src="img/quility-Icon.png" alt="" class="feat-icon"><div>Quality<br><em><strong>Services</strong></em></div></li>
+        <li><img src="img/positive-Icon.png" alt="" class="feat-icon"><div>Positive<br><em><strong>Consultation</strong></em></div></li>
+        <li><img src="img/support-Icon.png" alt="" class="feat-icon"><div>24 Hours<br><em><strong>Support</strong></em></div></li>
+      </ul>
+    </div>
+
     
+    <div class="why-media">
+      <img src="img/feature.png" alt="Doctors consulting with a patient">
+    </div>
+  </div>
+</section>
+
+  <section class="doctors" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Experience Doctors</h2>
+        <a href="#" class="link">View All Doctors →</a>
+      </div>
+      <div class="doctor-grid">
+        <article class="doctor-card">
+          <img src="img/doctor-Abram.png" alt="">
+          <h3>Dr. Abrams</h3>
+          <p>General Surgery, Geriatrics</p>
+        </article>
+        <article class="doctor-card">
+          <img src="img/doctor-Bloom.png" alt="">
+          <h3>Dr. Bloom</h3>
+          <p>Internal Medicine</p>
+        </article>
+        <article class="doctor-card">
+          <img src="img/doctor-Carre.png" alt="">
+          <h3>Dr. Carre</h3>
+          <p>Pediatrics</p>
+        </article>
+        <article class="doctor-card">
+          <img src="img/doctor-davis.png" alt="">
+          <h3>Dr. Davis</h3>
+          <p>Geriatrics</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Health Care Services</h2>
+        <a href="#" class="link">View All Services →</a>
+      </div>
+      <div class="service-grid">
+        <div class="service"><h3>Dental Surgery</h3><p>Our dental surgery clinic provides a wide range of surgical procedures to address complex oral health issues. We offer tooth ...</p></div>
+        <div class="service"><h3>Laboratory</h3><p>Our medical clinic provides a comprehensive range of 
+            laboratory services to support accurate diagnosis, treatment, and monitoring of various health…</p></div>
+        <div class="service"><h3>Cardiology</h3><p>Our medical clinic provides a comprehensive range of laboratory services to support accurate diagnosis, treatment, and monitoring of various health…</p></div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer" id="contact">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+            <img src="img/klinika-logo.png" alt="Klinika logo" class="footer-logo-img">
+        </a>
+    </div>
+    <section class="footer__address">
+      <h4>Address</h4>
+      <address>
+        12701 127 St, Edmonton, AB<br>
+        +345 678 9012<br>
+        <a href="mailto:info@klinika.com">info@klinika.com</a>
+      </address>
+    </section>
+    <nav class="footer__links" aria-label="Quick Links">
+        <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#doctors">Our Doctors</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

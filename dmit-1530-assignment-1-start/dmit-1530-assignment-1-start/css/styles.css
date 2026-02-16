@@ -1,5 +1,17 @@
 :root {
-
-
+    --blue-grey-50: #ECEFF1;
+    --blue-grey-100: #CFD8DC;
+    --blue-grey-200: #B0BEC5;
+    --blue-grey-900: #263238;
+    --ink: #0f172a;
+    --muted: #475569;
+    --blue: #0b63f6;
+    --blue-700: #0a54d3;
+    --ring: #e2e8f0;
+    --soft: #eef3ff;
+    --footer: #0b1a3a;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --container: 1120px;
 
 }
