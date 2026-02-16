@@ -34,11 +34,6 @@ nav{
     justify-content: space-between;
 }
 
-
-
-/* =========================================
-   Header
-========================================= */
 .header {
   position: sticky;
   top: 0;
@@ -85,9 +80,6 @@ nav{
 .nav-about   { order: 2; }
 .nav-doctors { order: 4; }
 
-/* =========================================
-   Hero
-========================================= */
 .hero {
   padding: 2rem 0 1.5rem;
 }
@@ -143,11 +135,6 @@ nav{
   color: var(--muted);
   font-size: 0.95rem;
 }
-
-/* =========================================
-   About
-========================================= */
-
 
 .about {
   background: var(--blue);
@@ -221,7 +208,7 @@ nav{
 
 a.btn {
   display: inline-block;
-  background-color: #0b1a3a;   /* dark navy */
+  background-color: #0b1a3a;   
   color: #ffffff;
   padding: 10px 18px;
   border-radius: 6px;
@@ -231,23 +218,19 @@ a.btn {
 }
 
 a.btn.primary {
-  background-color: #2563eb;   /* blue */
+  background-color: #2563eb;   
 }
 
-/* Hover states */
 a.btn:hover {
-  background-color: #16224d;   /* slightly darker navy */
+  background-color: #16224d;   
   transform: translateY(-2px);
 }
 
 a.btn.primary:hover {
-  background-color: #1d4ed8;   /* darker blue */
+  background-color: #1d4ed8;   
   transform: translateY(-2px);
 }
 
-/* =========================================
-   Why Choose Us
-========================================= */
 .why {
   background-color: white;
   padding: 80px 0;
@@ -260,7 +243,6 @@ a.btn.primary:hover {
   align-items: center;
 }
 
-/* Columns */
 .why > .container > .why-text {
   order: 1;
   flex: 1 1 0;
@@ -272,7 +254,6 @@ a.btn.primary:hover {
   flex: 1 1 0;
 }
 
-/* Heading and paragraph */
 .why h2 {
   font-size: 32px;
   font-weight: 800;
@@ -289,7 +270,6 @@ a.btn.primary:hover {
   text-align: left;
 }
 
-/* Features under paragraph */
 .why-features {
   list-style: none;
   padding: 0;
@@ -323,7 +303,6 @@ a.btn.primary:hover {
   font-size: 15px;
 }
 
-/* Image styling */
 .why-media img {
   width: 100%;
   height: auto;
@@ -332,15 +311,12 @@ a.btn.primary:hover {
   object-fit: cover;
 }
 
-
-
-/* Features list (under paragraph) */
 .why-features {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr; /* 1 column on mobile */
+  grid-template-columns: 1fr; 
   gap: 18px 24px;
 }
 .why-features li {
@@ -357,7 +333,6 @@ a.btn.primary:hover {
 .why-features strong { color: #0f172a; font-weight: 700; }
 .why-features em     { color: #475569; font-style: normal; font-size: 15px; }
 
-/* Image */
 .why-media img {
   width: 100%;
   height: auto;
@@ -365,9 +340,7 @@ a.btn.primary:hover {
   border-radius: 12px;
   object-fit: cover;
 }
-/* =========================================
-   Doctors
-========================================= */
+
 .doctors {
   background: var(--blue);
   color: #fff;
@@ -420,9 +393,6 @@ a.btn.primary:hover {
   font-size: 0.95rem;
 }
 
-/* =========================================
-   Services
-========================================= */
 
 .services {
   background-color: #ffffff;
@@ -441,19 +411,17 @@ a.btn.primary:hover {
  
 }
 
-/* Lead paragraphs */
 .services > .container > p {
-  max-width: 72ch;       /* readable line length */
+  max-width: 72ch;       
   margin: 0 0 14px;
   color: #475569;
   line-height: 1.65;
   text-align: left;
 }
 
-/* Service cards grid */
 .service-grid {
   display: grid;
-  grid-template-columns: 1fr; /* mobile */
+  grid-template-columns: 1fr; 
   gap: 12px;
   margin-top: 16px;
 }
@@ -478,27 +446,20 @@ a.btn.primary:hover {
   font-size: 15px;
 }
 
-/* =========================
-   DOCTOR GALLERY
-========================= */
 
 .doctor-gallery {
   display: grid;
-  grid-template-columns: 1fr; /* mobile */
+  grid-template-columns: 1fr; 
   gap: 10px;
   margin-top: 18px;
 }
 
-/* Make all gallery images consistent */
 .doctor-gallery img {
   width: 100%;
-  object-fit: cover;          /* fills the frame nicely */
+  object-fit: cover;         
   display: block;
 }
 
-/* =========================================
-   Footer
-========================================= */
 .footer {
   background-color: #0b1a3a;
   color: #e6ecff;
@@ -521,14 +482,12 @@ a.btn.primary:hover {
   color: #cfe0ff;
 }
 
-/* layout container */
 .footer__grid {
   display: grid;
   gap: 16px;
   padding: 24px 0;
 }
 
-/* headings and list styles */
 .footer__links h4,
 .footer__address h4 {
   margin: 0 0 8px;
@@ -545,7 +504,6 @@ a.btn.primary:hover {
   text-align: center;
 }
 
-/* logo */
 .footer__logo {
   display: inline-block;
 }
@@ -555,8 +513,7 @@ a.btn.primary:hover {
   display: block;
 }
 
-/* ===== MOBILE ===== */
-/* Stack vertically: Logo → Address → Quick Links */
+
 .footer__brand {
   order: 1;
   text-align: center;
@@ -571,11 +528,8 @@ a.btn.primary:hover {
   text-align: center;
   justify-content: center;
 }
-/* =========================================
-   Media Queries
-========================================= */
 
-/* Tablet ≥768px */
+/* Media Queries */
 @media (min-width: 768px) {
   /* Header */
   .header__bar {
@@ -593,7 +547,7 @@ a.btn.primary:hover {
     gap: 1.25rem;
   }
 
-  /* Hero */
+  
   .hero-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -609,7 +563,7 @@ a.btn.primary:hover {
     justify-items: start;
   }
 
-  /* About */
+  
   .about-grid {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -617,18 +571,18 @@ a.btn.primary:hover {
   }
 
 
-  /* Why */
+  
  .why > .container {
-    flex-direction: row;   /* side by side layout */
+    flex-direction: row;   
     align-items: center;
   }
 
   .why > .container > .why-text {
-    order: 1; /* left */
+    order: 1; 
   }
 
   .why > .container > .why-media {
-    order: 2; /* right */
+    order: 2; 
   }
 
   .why-features {
@@ -679,7 +633,7 @@ a.btn.primary:hover {
 
   .footer__links {
     order: 3;
-    text-align: right; /* stays on far right */
+    text-align: right; 
   }
 
   .footer-logo-img {
@@ -687,7 +641,7 @@ a.btn.primary:hover {
   }
 }
 
-/* Desktop ≥1024px */
+
 @media (min-width: 1024px) {
   .container {
     width: min(100% - 3rem, var(--container));
@@ -772,6 +726,6 @@ a.btn.primary:hover {
   }
 
   .footer__links {
-    text-align: right; /* far right on wide screens */
+    text-align: right; 
   }
 }
