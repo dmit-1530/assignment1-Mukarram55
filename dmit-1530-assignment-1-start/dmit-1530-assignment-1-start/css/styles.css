@@ -15,3 +15,763 @@
     --container: 1120px;
 
 }
+
+body {
+    color: #000;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--blue-grey-50);
+    color: #fff;
+    padding: 2rem 4rem;   
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* =========================================
+   Header
+========================================= */
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--ring);
+  z-index: 20;
+}
+
+
+.header__bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 0;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+
+.header__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.5rem 1.5rem;
+}
+
+.header__links a {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.header__links a:hover {
+  color: var(--ink);
+}
+
+.nav-contact { order: 3; }
+.nav-home    { order: 1; }
+.nav-about   { order: 2; }
+.nav-doctors { order: 4; }
+
+/* =========================================
+   Hero
+========================================= */
+.hero {
+  padding: 2rem 0 1.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+}
+
+.hero-text p {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.stats li {
+  display: grid;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.stats strong {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.stats span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   About
+========================================= */
+
+
+.about {
+  background: var(--blue);
+  color: var(--ink);
+  padding: 2rem 0;
+}
+
+.about-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-text h2 {
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.about-text p {
+  color: var(--ink);
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin: 0.4rem 0;
+  text-align: left;
+}
+
+.checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;              
+  width: 18px;           
+  height: 18px;
+  background-image: url("/img/Checkmark.png"); 
+  background-position: center;
+  background-size: contain;
+}
+
+.about .checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;              
+  width: 18px;           
+  height: 18px;
+  background-image: url("/img/checkmark-white.png"); 
+  background-position: center;
+  background-size: contain;
+}
+
+.about .btn {
+  background: #fff;
+  color: var(--blue);
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow);
+}
+
+a.btn {
+  display: inline-block;
+  background-color: #0b1a3a;   /* dark navy */
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+a.btn.primary {
+  background-color: #2563eb;   /* blue */
+}
+
+/* Hover states */
+a.btn:hover {
+  background-color: #16224d;   /* slightly darker navy */
+  transform: translateY(-2px);
+}
+
+a.btn.primary:hover {
+  background-color: #1d4ed8;   /* darker blue */
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   Why Choose Us
+========================================= */
+.why {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.why > .container {
+  display: flex;
+  flex-direction: column;  /* stack on mobile */
+  gap: 40px;
+  align-items: center;
+}
+
+/* Columns */
+.why > .container > .why-text {
+  order: 1;
+  flex: 1 1 0;
+  max-width: 640px;
+}
+
+.why > .container > .why-media {
+  order: 2;
+  flex: 1 1 0;
+}
+
+/* Heading and paragraph */
+.why h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.why p {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* Features under paragraph */
+.why-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 24px;
+}
+
+.why-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feat-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  object-fit: contain;
+}
+
+.why-features strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.why-features em {
+  color: #475569;
+  font-style: normal;
+  font-size: 15px;
+}
+
+/* Image styling */
+.why-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+
+/* Features list (under paragraph) */
+.why-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column on mobile */
+  gap: 18px 24px;
+}
+.why-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.feat-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  object-fit: contain;      
+}
+.why-features strong { color: #0f172a; font-weight: 700; }
+.why-features em     { color: #475569; font-style: normal; font-size: 15px; }
+
+/* Image */
+.why-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+/* =========================================
+   Doctors
+========================================= */
+.doctors {
+  background: var(--blue);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.link {
+  color: #e6ecff;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.doctor-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.doctor-card {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.doctor-card img {
+  width: 100%;
+}
+
+.doctor-card h3 {
+  margin: 0.8rem 1rem 0.3rem;
+  font-size: 1rem;
+}
+
+.doctor-card p {
+  margin: 0 1rem 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   Services
+========================================= */
+
+.services {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.services .section-header {
+  margin-bottom: 12px;
+}
+
+.services .section-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+ 
+}
+
+/* Lead paragraphs */
+.services > .container > p {
+  max-width: 72ch;       /* readable line length */
+  margin: 0 0 14px;
+  color: #475569;
+  line-height: 1.65;
+  text-align: left;
+}
+
+/* Service cards grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile */
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.service {
+  background-color: #eef3ff;
+  border: 1px solid #e0e9ff;
+  padding: 14px 16px;
+}
+
+.service h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.service p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* =========================
+   DOCTOR GALLERY
+========================= */
+
+.doctor-gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile */
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* Make all gallery images consistent */
+.doctor-gallery img {
+  width: 100%;
+  object-fit: cover;          /* fills the frame nicely */
+  display: block;
+}
+
+/* =========================================
+   Footer
+========================================= */
+.footer {
+  background-color: #0b1a3a;
+  color: #e6ecff;
+}
+
+.footer a {
+  color: #bbd0ff;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  padding: 12px 0;
+  color: #cfe0ff;
+}
+
+/* layout container */
+.footer__grid {
+  display: grid;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+/* headings and list styles */
+.footer__links h4,
+.footer__address h4 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+  text-align: center;
+}
+
+/* logo */
+.footer__logo {
+  display: inline-block;
+}
+.footer-logo-img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+/* ===== MOBILE ===== */
+/* Stack vertically: Logo → Address → Quick Links */
+.footer__brand {
+  order: 1;
+  text-align: center;
+}
+.footer__address {
+  order: 1;
+  text-align: center;
+
+}
+.footer__links {
+  order: 2;
+  text-align: center;
+  justify-content: center;
+}
+/* =========================================
+   Media Queries
+========================================= */
+
+/* Tablet ≥768px */
+@media (min-width: 768px) {
+  /* Header */
+  .header__bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-home    { order: 2; }
+  .nav-about   { order: 3; }
+  .nav-doctors { order: 4; }
+  .nav-contact { order: 1; }
+
+  .header__links {
+    grid-template-columns: repeat(4, auto);
+    gap: 1.25rem;
+  }
+
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+  /* Why */
+ .why > .container {
+    flex-direction: row;   /* side by side layout */
+    align-items: center;
+  }
+
+  .why > .container > .why-text {
+    order: 1; /* left */
+  }
+
+  .why > .container > .why-media {
+    order: 2; /* right */
+  }
+
+  .why-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Doctors */
+  .doctor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Services */
+   .services {
+    padding: 80px 0;
+  }
+
+  .services .section-header h2 {
+    font-size: 28px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .doctor-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2x2 */
+    gap: 12px;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 20px;
+    padding: 28px 0;
+  }
+
+  .footer__brand {
+    order: 2;
+    text-align: left;
+  }
+
+  .footer__address {
+    order: 1;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .footer__links {
+    order: 3;
+    text-align: right; /* stays on far right */
+  }
+
+  .footer-logo-img {
+    height: 55px;
+  }
+}
+
+/* Desktop ≥1024px */
+@media (min-width: 1024px) {
+  .container {
+    width: min(100% - 3rem, var(--container));
+  }
+
+  .nav-home    { order: 2; }
+  .nav-about   { order: 3; }
+  .nav-doctors { order: 4; }
+  .nav-contact { order: 1; }
+
+  
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .hero-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+ .why {
+    padding: 100px 0;
+  }
+
+  .why > .container {
+    gap: 60px;
+  }
+
+  .why h2 {
+    font-size: 36px;
+  }
+
+  .why p {
+    font-size: 17px;
+  }
+  .doctor-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services {
+    padding: 100px 0;
+  }
+
+  .services .section-header h2 {
+    font-size: 32px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .doctor-gallery {
+    grid-template-columns: repeat(4, 1fr); /* four across */
+    gap: 14px;
+  }
+
+  .services > .container > p {
+    font-size: 17px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .footer__brand {
+    text-align: left;
+  }
+
+  .footer__address {
+    text-align: left;
+  }
+
+  .footer__links {
+    text-align: right; /* far right on wide screens */
+  }
+}
