@@ -153,6 +153,10 @@ header {
 .btn:hover {
   background: #ddd;
 }
+.about-page .hero {
+  padding-top: 5rem;
+}
+
 
 /* =========================
    DOCTORS SECTION
@@ -325,7 +329,8 @@ footer a:hover {
   }
 
   .card {
-    width: 240px;
+    flex: 1 1 13.75rem;
+    max-width: 260px;
   }
 
   .service {
