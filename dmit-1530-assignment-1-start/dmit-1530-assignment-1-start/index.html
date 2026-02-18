@@ -5,14 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Additional Meta Information -->
-    <meta name="author" content="">
-    <meta name="description" content="">
+    <meta name="author" content="Mukarram Baig">
+    <meta name="description" content="Learn more about Klinika Hospital, our doctors, and the healthcare services we provide.">
 
-    <title>Document</title>
+    <title>Home Page</title>
+
+    <!-- Google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+  <div class="container nav">
+    <a href="index.html">
+      <img src="img/klinika-Logo.png" alt="Klinika logo" class="logo">
+    </a>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container row">
+
+    <div>
+      <h1>Good Health Is The Root Of All Happiness</h1>
+
+      <div class="row stats">
+        <p><strong>123</strong><br>Doctors</p>
+        <p><strong>1234</strong><br>Staff</p>
+        <p><strong>12345</strong><br>Patients</p>
+      </div>
+    </div>
+
+    <img src="img/carousel-1-1.png" alt="Doctors team">
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container row">
+
+    <img src="img/doctors-smiling.png" alt="Clinic team">
+
+    <div>
+      <h2>Why You Should Trust Us?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <ul class="list">
+        <li>Quality health care</li>
+        <li>Qualified Doctors</li>
+        <li>Medical Research Professionals</li>
+      </ul>
+
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- DOCTORS -->
+<section class="doctors" id="doctors">
+  <div class="container">
+
+    <div class="row section-title">
+      <h2>Our Doctors</h2>
+      <a href="#">View All →</a>
+    </div>
+
+    <div class="row cards">
+
+      <div class="card">
+        <img src="img/doctor-Abram.png" alt="Image of Doctor Abram">
+        <h3>Dr. Abrams</h3>
+        <p>General Surgery</p>
+      </div>
+
+      <div class="card">
+        <img src="img/doctor-Bloom.png" alt="Image of Doctor Bloom">
+        <h3>Dr. Bloom</h3>
+        <p>Internal Medicine</p>
+      </div>
+
+      <div class="card">
+        <img src="img/doctor-Carre.png" alt="Image of Doctor Carre">
+        <h3>Dr. Carre</h3>
+        <p>Pediatrics</p>
+      </div>
+
+      <div class="card">
+        <img src="img/doctor-davis.png" alt="Image of Doctor Davis">
+        <h3>Dr. Davis</h3>
+        <p>Geriatrics</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="container row footer">
+
+    <div>
+      <img src="img/klinika-logo.png" alt="logo" class="logo">
+    </div>
+
+    <div>
+      <h4>Address</h4>
+      <p>12701 127 St, Edmonton</p>
+      <p>+345 678 9012</p>
+    </div>
+
+    <div>
+      <h4>Links</h4>
+      <a href="#home">Home</a><br>
+      <a href="#about">About</a><br>
+      <a href="#doctors">Doctors</a>
+    </div>
+
+  </div>
+</footer>
 </body>
 </html>
